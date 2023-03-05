@@ -1,3 +1,10 @@
+:root {
+    --green1: #36D6A9;
+    --green2: #55FFC2;
+
+    --gray1: #3E3E3E;
+}
+
 *,
 *::before,
 *::after {
@@ -16,6 +23,10 @@ body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+}
+
+ol, ul {
+	list-style: none;
 }
 
 img, picture, video, canvas, svg {
