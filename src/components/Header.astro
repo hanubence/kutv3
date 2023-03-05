@@ -1,13 +1,45 @@
 ---
-
+import logo from '../images/logo.png'
 ---
 <header>
     <nav>
         <ul>
-            <li>LOGO</li>
-            <li>SZOLGÁLTATÁSOK</li>
-            <li>KEDVEZMÉNYEK</li>
-            <li>KAPCSOLAT</li>
+            <li><img src={logo} alt="A benzinkút logo képe."></li>
+            <li><a href="">SZOLGÁLTATÁSOK</a></li>
+            <li><a href="">KEDVEZMÉNYEK</a></li>
+            <li><a href="" class="contact-btn">KAPCSOLAT</a></li>
         </ul>
     </nav>
 </header>
+
+<style>
+    header {
+        width: 100%;
+        height: 3rem;
+    }
+
+    nav {
+        width: 100%;
+        height: 100%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    ul > li:nth-child(1) {
+        align-self: flex-start;
+    }
+
+    img {
+        height: 3rem;
+        width: auto;
+    }
+
+    .contact-btn {
+
+    }
+</style>
